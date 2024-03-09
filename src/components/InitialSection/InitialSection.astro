@@ -1,0 +1,34 @@
+---
+import TextWriter from "./TextWriter";
+import ArrowUpRight from "../Icons/ArrowUpRigth.astro";
+---
+
+<section
+    class="w-full flex flex-col items-center justify-center h-screen text-center rounded-b-[200px]"
+>
+    <div class="relative">
+        <img
+            src="/profile.webp"
+            alt="profile image"
+            class="rounded-full object-cover w-44 h-44 mb-4 border-4"
+        />
+        <span
+            class="bg-black dark:bg-white text-black dark:text-black font-bold px-4 py-2 rounded-2xl text-sm absolute
+                w-36 left-[130px] bottom-[100px] -rotate-6"
+            >Mucho gusto ✋🏽</span
+        >
+    </div>
+    <hgroup class="w-full flex flex-col items-center justify-center">
+        <h1
+            class="text-black dark:text-white font-extrabold text-5xl text-center mt-10 w-full"
+        >
+            Hola , soy Felix Ochoa
+        </h1>
+        <TextWriter client:load />
+    </hgroup>
+    <a
+        href="Contact"
+        class="flex flex-row items-center gap-2 mt-10 px-6 py-4 bg-dark dark:bg-white font-medium rounded-full cursor-pointer hover:animate-jiggle text-black text-sm"
+        >Contáctame <ArrowUpRight /></a
+    >
+</section>

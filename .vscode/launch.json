@@ -2,8 +2,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "./node_modules/.bin/astro dev",
-      "name": "Development server",
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "request": "attach",
+      "type": "chrome",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "command": "npm run dev",
+      "name": "Launch via NPM",
       "request": "launch",
       "type": "node-terminal"
     }
